@@ -17,7 +17,7 @@ module FormsLab
         Ship.new(name: ship_data["name"], type: ship_data["type"], booty: ship_data["booty"])
       end
 
-      @pirate = Pirate.new(params["pirate"]["name"], params["pirate"]["height"], params["pirate"]["weight"])
+      @pirate = Pirate.new(name: params["pirate"]["name"], height: params["pirate"]["height"], weight: params["pirate"]["weight"])
 
       @ships = Ship.all
 
